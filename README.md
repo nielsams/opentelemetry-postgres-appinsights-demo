@@ -24,3 +24,7 @@ Please treat this as a proof of concept. This code was written to demonstrate a 
 - [Microsoft's vision on Azure Monitor and OpenTelemetry](https://techcommunity.microsoft.com/t5/azure-monitor-blog/opentelemetry-azure-monitor/ba-p/2737823)
 - [Tutorial: Enable Azure Monitor OpenTelemetry Exporter for .NET, Node.js, and Python applications (preview)](https://docs.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable?tabs=net)
 - [ASP.net core OpenTelemetry sample](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/examples/AspNetCore)
+
+## Screenshot
+The end result will look something like this in the Application Insights application map. We even get an elephant!
+![Application Map sample](media/screenshot.png)

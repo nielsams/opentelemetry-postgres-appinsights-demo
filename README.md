@@ -7,7 +7,7 @@ Getting traces from database queries is extremely useful for optimizing applicat
 For Microsoft SQL, client SDKs such as Microsoft.Data.SqlClient natively have deep integration with Application Insights. 
 However, when you use Postgres as a database the SDKs you use are not controlled by Microsoft and integration with App Insights is not something you can count on. 
 
-To achieve the same level of telemetry collection, there are possibilities to instrument the SDKs yourself. For example, if you use Entity Framework you can use the [interceptor interfaces](https://docs.microsoft.com/en-us/ef/core/logging-events-diagnostics/interceptors) to hook into the query process and send data to Application Insights.
+To achieve the same level of telemetry collection, there are possibilities to instrument the SDKs yourself. For example, if you use Entity Framework you can use the [interceptor interfaces](https://docs.microsoft.com/en-us/ef/core/logging-events-diagnostics/interceptors) to hook into the query process and send data to Application Insights, as demonstrated [here](https://amuratgencay.medium.com/how-to-track-postgresql-queries-using-entityframework-core-in-application-insights-2f173d6c636d).
 Not every SDK has that capability and there may be good reasons not to use EF.
 
 Another way is to use [OpenTelemetry](https://opentelemetry.io/), a CNCF project aimed at improving telemetry exchange between languages, SDKs and platforms. This allows you to capture telemetry in your code and send it to a telemetry sink of your choice. Both .net core and Application Insights are supported.

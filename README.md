@@ -18,6 +18,14 @@ For that reason, this code implements both. To ensure the data sent through both
 
 Please treat this as a proof of concept. This code was written to demonstrate a very specific use case and lacks the proper exception handling, logging, retry logic, connection monitoring, factory patterns, etc. you need in a proper implementation, but those have been omitted here for clarity. 
 
+## PoC Usage
+- Open the .sln in Visual Studio 2019 or later. 
+- Change the queries in PostgresClient.cs to something that works on your dataset. 
+- Publish to Azure AppService, where you add the following AppSettings:
+    - CloudRoleName (how you want your service to show up in AppInsights)
+    - AppInsights_ConnectionString (Full connection string for AppInsights)
+    - Postgres_ConnectionString (Full connection string for your PostgreSQL server)
+
 ## Links
 
 - [OpenTelemetry Homepage](https://www.opentelemetry.io)
